@@ -1,0 +1,72 @@
+body{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(lightgreen)skyblueolor);
+    background-image: -webkit-linear-gradient(top, lightgreen,skyblue);
+    background-image: -moz-linear-gradient(top, lightgreen,skyblue);
+    background-image: linear-gradient(to bottom, lightgreen,skyblue);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#i1{
+    background-color: lightcoral;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 0;
+}
+#navbar{
+    background: lightslategray;
+    text-align: center;
+    height: 100%;
+    width: 50px;
+    z-index:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: 50% 50%;
+}
+#navbar ul{
+    display: none;
+    
+}
+#i2{
+   
+    display: inline-block;
+    text-align: center;
+    
+}
+#navbar:hover{
+    
+    animation: viewe 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.50;
+}
+#navbar:hover ul{
+    
+    display: block;
+    animation: posch 0.4s forwards;
+}
+#navbar:hover i{
+    display: none;
+}
+#navbar li{
+    border: 1px solid white;
+    margin-left: 0;
+    padding-left: 0;
+    width:100%;
+    margin-top: 10%;
+  
+}
+
+
+@keyframes viewe{
+    from{}
+    to{width:20vh;height: 100vh;}
+}
+@keyframes posch {
+    from{}
+    to{position: absolute;align-self: center;}
+}
