@@ -40,14 +40,20 @@ body{
 }
 #navbar:hover{
     
-    animation: viewe 1s;
+    animation: viewe 0.95s;
     animation-fill-mode: forwards;
     animation-delay: 0.50;
 }
 #navbar:hover ul{
     
     display: block;
-    animation: posch 0.4s forwards;
+    width: inherit;
+    
+    transform: translateX(-35%);
+    animation: posch 0.7s forwards;
+}
+#navbar li:hover{
+    animation: navli 0.5s forwards;
 }
 #navbar:hover i{
     display: none;
@@ -58,7 +64,7 @@ body{
     padding-left: 0;
     width:100%;
     margin-top: 10%;
-  
+    list-style-type: none;
 }
 
 
@@ -68,5 +74,11 @@ body{
 }
 @keyframes posch {
     from{}
-    to{position: absolute;align-self: center;}
+    to{position: absolute;align-self: center;width: 120%;}
+}
+@keyframes navli{
+    from{}
+    to{background-color: white;
+    height: 2em;
+    padding-top: 0.5em;}
 }
