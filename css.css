@@ -5,13 +5,19 @@ body{
     background-image: linear-gradient(to bottom, lightgreen,skyblue);
     background-repeat: no-repeat;
     height: 100em;
+    padding: 0;
+    margin: 0;
+}
+.yellower{
+    background-color: yellow;
 }
 #i1{
     background-color: lightcoral;
     text-align: center;
     width: 100%;
     display: inline-block;
-    position: absolute;
+    position: sticky;
+    margin:0;
     top:0;
     left:0;
     right: 0;
