@@ -4,7 +4,7 @@ body{
     background-image: -moz-linear-gradient(top, lightgreen,skyblue);
     background-image: linear-gradient(to bottom, lightgreen,skyblue);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100em;
 }
 #i1{
     background-color: lightcoral;
@@ -46,11 +46,11 @@ body{
 }
 #navbar:hover ul{
     
-    display: block;
-    width: inherit;
     
+    width: inherit;
+    display: block;
     transform: translateX(-35%);
-    animation: posch 0.7s forwards;
+    animation: posch 0.7s forwards,fadeIn 0.8s forwards;
 }
 #navbar li:hover{
     animation: navli 0.5s forwards;
@@ -76,6 +76,10 @@ body{
     from{}
     to{position: absolute;align-self: center;width: 120%;}
 }
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
 @keyframes navli{
     from{}
     to{background-color: white;
